@@ -15,8 +15,8 @@ Cloudinary - Image storage and optimization
 
 ## Basics
 
-- by default files are rendered from Server
-- until explicitly marked `use client` in a file
+- by default files are rendered from Server - Server components
+- until explicitly marked `use client` in a file - Client components
 
 - app/layout.jsx - entry point to the app
   - contain the app's main meta data declaration for SEO optimization
@@ -27,3 +27,28 @@ Cloudinary - Image storage and optimization
 
 - `<a href="/route">click me</a>` - a tags reloads page
 - `Link from 'next/link` - doesn't reload page
+
+![when to use Server and Client components?](image-1.png)
+
+- server component console.log() - logs in server not in client
+
+- use... anything will give ERROR when it is an server component (hooks)
+
+![console logs in server terminal](image-2.png)
+![server terminal](image-3.png)
+
+![console logs in client terminal](image-6.png)
+![client terminal](image-5.png)
+
+![onClick event listeners can be used if it is client](image-7.png)
+
+### Next.js - hooks
+
+- `useRouter()`
+- `useParams()` - gets parameters in URL (:id)
+- `useSearchParams()` - like getting query form URL (?name=john)
+- `usePathname()` - gets the route URL (/properties/300?name=Brad)
+
+![useParams()](image-8.png)
+![useSearchParams()](image-9.png)
+![usePathname()](image-10.png)
