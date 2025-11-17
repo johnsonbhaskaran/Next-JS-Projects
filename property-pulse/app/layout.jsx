@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import "@/assets/styles/globals.css";
 
 export const metadata = {
@@ -13,8 +14,8 @@ const MainLayout = ({ children }) => {
         <meta name='color-scheme' content='dark light' />
       </head>
       <body>
-        <div>MainLayout</div>
-        <div>{children}</div>
+        <Navbar>MainLayout</Navbar>
+        <main>{children}</main>
       </body>
     </html>
   );
