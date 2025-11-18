@@ -52,3 +52,13 @@ Cloudinary - Image storage and optimization
 ![useParams()](image-8.png)
 ![useSearchParams()](image-9.png)
 ![usePathname()](image-10.png)
+
+### Next API routing
+
+success state
+![success state](image-11.png)
+![browser window](image-14.png)
+
+error state
+![error state](image-12.png)
+![browser window](image-13.png)
