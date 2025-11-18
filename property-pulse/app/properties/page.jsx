@@ -1,15 +1,8 @@
 import PropertyCard from "@/components/PropertyCard";
+import fetchProperties from "@/utils/fetchProperties";
 // import properties from "@/properties.json";
 
-async function fetchProperties() {
-  try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/properties`);
-    if (!res.ok) throw new Error("Failed to fetch data");
-    return res.json();
-  } catch (err) {
-    console.error(err);
-  }
-}
+fetchProperties();
 
 const PropertiesPage = async () => {
   const properties = await fetchProperties();
