@@ -14,6 +14,9 @@ async function fetchProperties() {
 const PropertiesPage = async () => {
   const properties = await fetchProperties();
 
+  // Sort properties by ascending date
+  properties.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
   return (
     <section className='px-4 py-6'>
       <div className='m-auto px-4 py-6 container-xl lg:container'>
